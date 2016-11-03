@@ -13,5 +13,19 @@ namespace BasicsOfForms.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Index(FormCollection sentForm)
+        {
+            // I like to see the values...
+            ViewBag.emailAddress = sentForm["email"];
+            ViewBag.password = sentForm["password"];
+            ViewBag.passwordConf = sentForm["passwordconf"];
+
+            int i = 0;
+
+            return View();
+        }
     }
 }
