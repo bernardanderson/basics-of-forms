@@ -13,5 +13,15 @@ namespace BasicsOfForms.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Index(FormCollection form)
+        {
+            ViewBag.formEmail = form["email"];
+            ViewBag.formPassword = form["password"];
+            ViewBag.formPasswordConf = form["password-conf"];
+
+            return View();
+        }
     }
 }
