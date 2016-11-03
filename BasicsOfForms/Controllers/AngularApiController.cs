@@ -9,11 +9,16 @@ namespace BasicsOfForms.Controllers
 {
     public class AngularApiController : ApiController
     {
-
         [HttpPost]
-        public void Post(dynamic sentFormData)
+        public HttpResponseMessage Post(dynamic sentFormData)
         {
+            // Using Docs at https://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/action-results
+            // To make a simple return reponse to the Angular Controller 
+            HttpResponseMessage simpleReponse = Request.CreateResponse(HttpStatusCode.OK, 200);
 
+            int i = 0;
+
+            return simpleReponse;
         }
     }
 }
