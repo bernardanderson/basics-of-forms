@@ -5,3 +5,13 @@
 
 <h2>HTML</h2>
 
+<div>
+    <form name="user-submit">
+        @Html.AntiForgeryToken()
+        <input type="text" name="email" placeholder="email"/>
+        <input type="password" name="password" placeholder="password" />
+        <input type="password" name="password-conf" placeholder="password conf" />
+        <button type="submit" formmethod="post">Submit</button>
+    </form>
+</div>
+
