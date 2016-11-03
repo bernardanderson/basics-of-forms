@@ -2,10 +2,7 @@
 
 app.controller("formcontroller", function ($scope, $http) {
 
-    $scope.hello = "This is your hello message";
-
-    $scope.formSubmit = function () {
-
+    $scope.formSubmit = function (sentUserValues) {
     }
 
 });

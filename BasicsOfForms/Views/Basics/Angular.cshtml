@@ -9,5 +9,11 @@
 <h1>Angular Form</h1>
 
 <div ng-controller="formcontroller">
-    {{hello}}
+    <form novalidate>
+        @Html.AntiForgeryToken()
+        <input type="email" ng-model="user.email" placeholder="Enter Email" />
+        <input type="password" ng-model="user.password" placeholder="Password" />
+        <input type="password" ng-model="user.passwordconf" placeholder="Confim Password" />
+        <button ng-click="formSubmit(user)">Submit</button>
+    </form>
 </div>
