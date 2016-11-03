@@ -27,5 +27,11 @@ namespace BasicsOfForms.Controllers
 
             return View();
         }
+
+        // GET: Razor
+        public ActionResult Razor()
+        {
+            return View();
+        }
     }
 }
