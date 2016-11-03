@@ -11,6 +11,10 @@ namespace BasicsOfForms
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/myangularapp").Include(
+                        "~/app/app.module.js",
+                        "~/app/Form-controller.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                         "~/Scripts/angular.js"));
 
