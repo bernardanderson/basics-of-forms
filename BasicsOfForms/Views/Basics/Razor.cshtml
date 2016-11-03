@@ -8,11 +8,11 @@
 
 <h1>Razor Form</h1>
 
-@using (Html.BeginForm("Razor", "Basic", FormMethod.Post))
+@using (Html.BeginForm("Razor", "Basics", FormMethod.Post))
 {
     //https://msdn.microsoft.com/en-us/library/system.web.mvc.html.inputextensions.textbox(v=vs.118).aspx
     @Html.AntiForgeryToken()
-    @Html.TextBox("name", "", new { type = "email", placeholder = "Enter Email Address" });
+    @Html.TextBox("email", "", new { type = "email", placeholder = "Enter Email Address" });
     @Html.Password("password", "", new { placeholder = "Password" });
     @Html.Password("passwordconf", "", new { placeholder = "Confirm Password" } );
     <input type="submit" value="Submit">
