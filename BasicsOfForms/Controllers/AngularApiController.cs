@@ -10,5 +10,10 @@ namespace BasicsOfForms.Controllers
     public class AngularApiController : ApiController
     {
 
+        [HttpPost]
+        public void Post(dynamic sentFormData)
+        {
+
+        }
     }
 }
